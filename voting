@@ -1,0 +1,40 @@
+package voting;
+import java.util.Scanner;
+public class A {
+	public void vote()
+	
+	{
+		Scanner obj=new Scanner(System.in);
+		String choice=obj.next();
+	switch(choice)
+	{
+	case "*":System.out.println("voted to bjp");
+	break;
+	case "#":System.out.println("voted to congress");
+	break;
+	default:System.out.println("not voted");
+	}
+	}
+
+
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		System.out.println("enter the name");
+		String a=obj.next();
+		System.out.println("enter age");
+		int i=obj.nextInt();
+					if(i>=18)			
+			{
+				System.out.println("eligible to vote ");
+				A arr=new A();
+				arr.vote();
+			}
+			else
+			{
+				System.out.println("not eigible to vote");
+			}
+					
+		
+	}
+
+}
